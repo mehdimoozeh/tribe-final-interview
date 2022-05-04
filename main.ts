@@ -14,9 +14,9 @@ const requirement = ["gym", "school", "store"];
 // store     4   3   2   1   0
 
 const valueOfFeatures: Record<Tfeatures, number[]> = {
-  gym: [Number.MAX_VALUE, Number.MAX_VALUE, Number.MAX_VALUE, Number.MAX_VALUE, Number.MAX_VALUE,],
-  school: [Number.MAX_VALUE, Number.MAX_VALUE, Number.MAX_VALUE, Number.MAX_VALUE, Number.MAX_VALUE],
-  store: [Number.MAX_VALUE, Number.MAX_VALUE, Number.MAX_VALUE, Number.MAX_VALUE, Number.MAX_VALUE,],
+  gym: new Array<number>(buildings.length).fill(Number.MAX_VALUE),
+  school: new Array<number>(buildings.length).fill(Number.MAX_VALUE),
+  store: new Array<number>(buildings.length).fill(Number.MAX_VALUE),
 };
 
 
